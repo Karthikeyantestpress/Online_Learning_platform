@@ -9,4 +9,9 @@ urlpatterns = [
         views.ManageCourseListView.as_view(),
         name="manage_course_list",
     ),
+    path(
+        "create/",
+        views.CourseCreateView.as_view(),
+        name="create",
+    ),
 ]

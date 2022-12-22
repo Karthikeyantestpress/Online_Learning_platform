@@ -13,5 +13,8 @@
     {% empty %}
       <p>You haven't created any courses yet.</p>
     {% endfor %}
+    <p>
+      <a href="{% url "course:create" %}" class="button">Create new course</a>
+    </p>
   </div>
 {% endblock %}
